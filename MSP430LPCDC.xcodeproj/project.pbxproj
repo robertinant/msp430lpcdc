@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBD638A1433954900FB4768 /* MSP430LPCDC.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBD63881433954900FB4768 /* MSP430LPCDC.h */; };
+		CDBD638B1433954900FB4768 /* MSP430LPCDCUser.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBD63891433954900FB4768 /* MSP430LPCDCUser.h */; };
+		CDBD638F1433957400FB4768 /* AppleUSBCDC.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBD638D1433957400FB4768 /* AppleUSBCDC.h */; };
+		CDBD63901433957400FB4768 /* AppleUSBCDCACM.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBD638E1433957400FB4768 /* AppleUSBCDCACM.h */; };
+		CDBD63921433958800FB4768 /* MSP430LPCDC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDBD63911433958800FB4768 /* MSP430LPCDC.cpp */; };
+		D2277A2A07417BF9002AF184 /* AppleUSBCDCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = D20F00F105DD9E7A00AA2BC5 /* AppleUSBCDCCommon.h */; };
+		D2277A3007417BF9002AF184 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D24E98F00680E7BD005360D4 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		CD06824E1433A5F800AF894E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		CD53F739143382A3009BBBF8 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		CDBD63881433954900FB4768 /* MSP430LPCDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSP430LPCDC.h; path = Headers/MSP430LPCDC.h; sourceTree = "<group>"; };
+		CDBD63891433954900FB4768 /* MSP430LPCDCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSP430LPCDCUser.h; path = Headers/MSP430LPCDCUser.h; sourceTree = "<group>"; };
+		CDBD638D1433957400FB4768 /* AppleUSBCDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleUSBCDC.h; path = Common/AppleUSBCDC.h; sourceTree = "<group>"; };
+		CDBD638E1433957400FB4768 /* AppleUSBCDCACM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleUSBCDCACM.h; path = Common/AppleUSBCDCACM.h; sourceTree = "<group>"; };
+		CDBD63911433958800FB4768 /* MSP430LPCDC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MSP430LPCDC.cpp; path = Classes/MSP430LPCDC.cpp; sourceTree = "<group>"; };
+		D20F00F105DD9E7A00AA2BC5 /* AppleUSBCDCCommon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AppleUSBCDCCommon.h; path = Common/AppleUSBCDCCommon.h; sourceTree = "<group>"; };
+		D2277A3407417BF9002AF184 /* MSP430-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MSP430-Info.plist"; path = "Plists/MSP430-Info.plist"; sourceTree = "<group>"; };
+		D2277A3507417BF9002AF184 /* MSP430LPCDC.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSP430LPCDC.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E98F10680E7BD005360D4 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F59C308D02C2AF4001000102 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2277A3107417BF9002AF184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* AppleUSBCDCEthernet */ = {
+			isa = PBXGroup;
+			children = (
+				D2036B5405E194EC0046B49D /* MSP430LP */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				CD53F737143382A3009BBBF8 /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				F59C308D02C2AF4001000102 /* Kernel.framework */,
+			);
+			name = AppleUSBCDCEthernet;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2277A3407417BF9002AF184 /* MSP430-Info.plist */,
+				D24E98F00680E7BD005360D4 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2277A3507417BF9002AF184 /* MSP430LPCDC.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD53F737143382A3009BBBF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD53F738143382A3009BBBF8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD53F738143382A3009BBBF8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD53F739143382A3009BBBF8 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D2036B5405E194EC0046B49D /* MSP430LP */ = {
+			isa = PBXGroup;
+			children = (
+				D2036B5505E1951D0046B49D /* Headers */,
+				D2036B5605E1952F0046B49D /* Classes */,
+			);
+			name = MSP430LP;
+			sourceTree = "<group>";
+		};
+		D2036B5505E1951D0046B49D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD63881433954900FB4768 /* MSP430LPCDC.h */,
+				CDBD63891433954900FB4768 /* MSP430LPCDCUser.h */,
+				D20F00F105DD9E7A00AA2BC5 /* AppleUSBCDCCommon.h */,
+				CDBD638D1433957400FB4768 /* AppleUSBCDC.h */,
+				CDBD638E1433957400FB4768 /* AppleUSBCDCACM.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D2036B5605E1952F0046B49D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD63911433958800FB4768 /* MSP430LPCDC.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2277A2907417BF9002AF184 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2277A2A07417BF9002AF184 /* AppleUSBCDCCommon.h in Headers */,
+				CDBD638A1433954900FB4768 /* MSP430LPCDC.h in Headers */,
+				CDBD638B1433954900FB4768 /* MSP430LPCDCUser.h in Headers */,
+				CDBD638F1433957400FB4768 /* AppleUSBCDC.h in Headers */,
+				CDBD63901433957400FB4768 /* AppleUSBCDCACM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2277A2707417BF9002AF184 /* MSP430LPCDC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973C87E60897FD9100B1007D /* Build configuration list for PBXNativeTarget "MSP430LPCDC" */;
+			buildPhases = (
+				D2277A2807417BF9002AF184 /* ShellScript */,
+				D2277A2907417BF9002AF184 /* Headers */,
+				D2277A2D07417BF9002AF184 /* Sources */,
+				D2277A2F07417BF9002AF184 /* Resources */,
+				D2277A3107417BF9002AF184 /* Frameworks */,
+				D2277A3207417BF9002AF184 /* ShellScript */,
+			);
+			buildRules = (
+				CD06824E1433A5F800AF894E /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = MSP430LPCDC;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions/IOUSBFamily.kext/Contents/PlugIns";
+			productName = USBCDCACMData;
+			productReference = D2277A3507417BF9002AF184 /* MSP430LPCDC.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 973C88020897FD9100B1007D /* Build configuration list for PBXProject "MSP430LPCDC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* AppleUSBCDCEthernet */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2277A2707417BF9002AF184 /* MSP430LPCDC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2277A2F07417BF9002AF184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2277A3007417BF9002AF184 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2277A2807417BF9002AF184 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		D2277A3207417BF9002AF184 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2277A2D07417BF9002AF184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBD63921433958800FB4768 /* MSP430LPCDC.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D24E98F00680E7BD005360D4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D24E98F10680E7BD005360D4 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		973C87E70897FD9100B1007D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Plists/MSP430-Info.plist";
+				INIT_ROUTINE = "";
+				INSTALL_GROUP = wheel;
+				INSTALL_MODE = "\"a-w, u+w, a+rX\"";
+				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/";
+				KERNEL_EXTENSION = YES;
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.ti.driver.MSP430LPCDC;
+				MODULE_VERSION = 1.0b;
+				OTHER_CFLAGS = "-D__MBUF_TRANSITION_";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MSP430LPCDC;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		973C87E80897FD9100B1007D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Plists/MSP430-Info.plist";
+				INIT_ROUTINE = "";
+				INSTALL_GROUP = wheel;
+				INSTALL_MODE = "\"a-w, u+w, a+rX\"";
+				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/";
+				KERNEL_EXTENSION = YES;
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.ti.driver.MSP430LPCDC;
+				MODULE_VERSION = 1.0b;
+				OTHER_CFLAGS = "-D__MBUF_TRANSITION_";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MSP430LPCDC;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		973C87E90897FD9100B1007D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Plists/MSP430-Info.plist";
+				INIT_ROUTINE = "";
+				INSTALL_GROUP = wheel;
+				INSTALL_MODE = "\"a-w, u+w, a+rX\"";
+				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/";
+				KERNEL_EXTENSION = YES;
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.ti.driver.MSP430LPCDC;
+				MODULE_VERSION = 1.0b;
+				OTHER_CFLAGS = "-D__MBUF_TRANSITION_";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MSP430LPCDC;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Default;
+		};
+		973C88030897FD9100B1007D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Development;
+		};
+		973C88040897FD9100B1007D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Deployment;
+		};
+		973C88050897FD9100B1007D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		973C87E60897FD9100B1007D /* Build configuration list for PBXNativeTarget "MSP430LPCDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973C87E70897FD9100B1007D /* Development */,
+				973C87E80897FD9100B1007D /* Deployment */,
+				973C87E90897FD9100B1007D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		973C88020897FD9100B1007D /* Build configuration list for PBXProject "MSP430LPCDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973C88030897FD9100B1007D /* Development */,
+				973C88040897FD9100B1007D /* Deployment */,
+				973C88050897FD9100B1007D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
